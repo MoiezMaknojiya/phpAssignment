@@ -1,6 +1,4 @@
 <?php
-define('tableName', 'users');
-
 $userData = $_POST;
 
 register_user($userData);
@@ -74,10 +72,11 @@ function register_user($userData)
     if( empty($message) )
     {
         // Create a new user
-        $success = createUser($xml, $file, $userData);
+        $id = createUser($xml, $file, $userData, "user", "customer_id");
+        $success = ( !empty($id) ) ? true : false;
         $message = 'Successfully Registered!';
     }
-    
+
     $response = array(
         'status' => $success,
         'message' => $message

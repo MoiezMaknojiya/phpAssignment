@@ -1,7 +1,4 @@
 <?php
-
-define('tableName', 'users');
-
 $userData = $_POST;
 
 loginUser($userData);

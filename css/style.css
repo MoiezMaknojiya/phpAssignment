@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+  padding: 40px 0 0;
+  font-family: 'Poppins', sans-serif; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+header {
+  max-width: 1440px;
+  padding: 0 64px; }
+  header .title h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 24px; }
+  header nav {
+    text-align: center; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 12px; }
+        header nav ul li a {
+          color: #fff;
+          text-decoration: none; }
+
+.admin_title {
+  max-width: 1440px;
+  padding: 0 64px;
+  text-align: center;
+  padding: 24px 0 0; }
+  .admin_title h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px; }
+
+.register_wrap {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 64px 0 0; }
+  .register_wrap .register form {
+    border-radius: 16px;
+    padding: 40px;
+    background-color: #fff; }
+    .register_wrap .register form .form_link_box .form_link_box_wrap {
+      position: relative;
+      display: flex;
+      height: 50px;
+      width: 100%;
+      overflow: hidden;
+      margin: 30px 0 10px 0;
+      justify-content: space-between;
+      border: 1px solid #d3d3d3;
+      border-radius: 16px; }
+      .register_wrap .register form .form_link_box .form_link_box_wrap a {
+        height: 100%;
+        width: 100%;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+        z-index: 1;
+        transition: all 0.6s ease;
+        text-decoration: none; }
+      .register_wrap .register form .form_link_box .form_link_box_wrap.login a.login_link {
+        color: #fff;
+        background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6); }
+      .register_wrap .register form .form_link_box .form_link_box_wrap.register a.register_link {
+        color: #fff;
+        background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6); }
+    .register_wrap .register form h3 {
+      margin: 0 0 16px;
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 500; }
+    .register_wrap .register form input {
+      height: 48px;
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 16px;
+      padding: 0 16px;
+      outline: none;
+      border: 2px solid #eee;
+      background-color: transparent !important; }
+    .register_wrap .register form select {
+      height: 48px;
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 16px;
+      padding: 0 16px;
+      outline: none;
+      border: 2px solid #eee;
+      background-color: transparent !important; }
+    .register_wrap .register form textarea {
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 16px;
+      padding: 16px 16px;
+      outline: none;
+      border: 2px solid #eee;
+      background-color: transparent !important; }
+    .register_wrap .register form a {
+      color: #1a75ff;
+      text-decoration: none; }
+      .register_wrap .register form a:hover {
+        text-decoration: underline; }
+    .register_wrap .register form .pass-link {
+      padding: 8px 0 0 10px; }
+    .register_wrap .register form .form_btn {
+      width: 100%;
+      margin-top: 20px; }
+      .register_wrap .register form .form_btn button {
+        height: 50px;
+        width: 100%;
+        background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+        border-radius: 15px;
+        transition: all 0.2s ease;
+        border: none;
+        color: #fff;
+        padding: 0 8px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer; }
+        .register_wrap .register form .form_btn button:hover {
+          background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6); }
+      .register_wrap .register form .form_btn.register_form_btn {
+        display: flex; }
+        .register_wrap .register form .form_btn.register_form_btn button:last-child {
+          margin-left: 8px; }
+    .register_wrap .register form .signup-link {
+      text-align: center;
+      margin-top: 32px; }
+    .register_wrap .register form .date_field {
+      display: flex;
+      gap: 14px; }
+      .register_wrap .register form .date_field input {
+        width: 33.33%; }
+
+.bid_popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  top: 0;
+  left: 0; }
+  .bid_popup .bid_popup_content {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 24px; }
+    .bid_popup .bid_popup_content .bid_popup_content_close {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 32px;
+      height: 32px;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      cursor: pointer;
+      border-radius: 100%;
+      background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+      box-shadow: 4px 4px 16px rgba(254, 135, 89, 0.29);
+      display: inline-block; }
+    .bid_popup .bid_popup_content .bid_popup_box form #msg {
+      color: #CA2017;
+      margin: 0;
+      text-align: center; }
+    .bid_popup .bid_popup_content .bid_popup_box form input {
+      height: 48px;
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 16px;
+      padding: 0 16px;
+      outline: none;
+      border: 2px solid #eee;
+      background-color: transparent !important; }
+    .bid_popup .bid_popup_content .bid_popup_box form .form_btn {
+      margin-top: 16px; }
+      .bid_popup .bid_popup_content .bid_popup_box form .form_btn button {
+        height: 50px;
+        width: 100%;
+        background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+        border-radius: 15px;
+        transition: all 0.2s ease;
+        border: none;
+        color: #fff;
+        padding: 5px 36px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer; }
+        .bid_popup .bid_popup_content .bid_popup_box form .form_btn button:hover {
+          background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6); }
+
+.bidding_wrap .bidding {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 0; }
+  .bidding_wrap .bidding h4 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 32px;
+    font-size: 28px; }
+  .bidding_wrap .bidding .bidding_list ul {
+    margin: 0;
+    padding: 0; }
+    .bidding_wrap .bidding .bidding_list ul li {
+      list-style: none;
+      margin-bottom: 24px; }
+      .bidding_wrap .bidding .bidding_list ul li .bid_box {
+        padding: 32px;
+        border-radius: 12px;
+        background-color: #fff; }
+        .bidding_wrap .bidding .bidding_list ul li .bid_box span.category_name {
+          padding: 4px 18px;
+          border-radius: 6px;
+          color: #fffefe;
+          display: inline-block;
+          background-color: #004080; }
+      .bidding_wrap .bidding .bidding_list ul li .btn {
+        display: flex;
+        gap: 12px;
+        margin-top: 24px; }
+        .bidding_wrap .bidding .bidding_list ul li .btn button {
+          height: 50px;
+          background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+          border-radius: 15px;
+          transition: all 0.2s ease;
+          border: none;
+          color: #fff;
+          padding: 5px 36px;
+          border-radius: 16px;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer; }
+          .bidding_wrap .bidding .bidding_list ul li .btn button:hover {
+            background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6); }
+      .bidding_wrap .bidding .bidding_list ul li:last-child {
+        margin-bottom: 0; }
+  .bidding_wrap .bidding .btn_group {
+    display: flex;
+    justify-content: center; }
+    .bidding_wrap .bidding .btn_group button {
+      height: 50px;
+      width: auto;
+      color: #004080;
+      background-color: #fff;
+      border-radius: 15px;
+      transition: all 0.2s ease;
+      border: none;
+      padding: 5px 36px;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer; }
+      .bidding_wrap .bidding .btn_group button:last-child {
+        margin-left: 16px; }
+      .bidding_wrap .bidding .btn_group button:hover {
+        opacity: 0.8; }
+
+/*# sourceMappingURL=style.css.map */

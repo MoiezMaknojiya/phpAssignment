@@ -12,18 +12,23 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main Style -->
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
     <header>
+          <div class="title">
+            <h2>Shope Online</h2>
+        </div>
         <nav>
             <ul>
                 <?php if( empty( $auth ) ) { ?>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="\">Home</a></li>
                 <?php } ?>
                 <?php if( !empty( $auth ) ) { ?>
                     <li><a href="listing.php">Listing</a></li>
-                    <li><a href="#contact">Bidding</a></li>
-                    <li><a href="#about">Maintenance</a></li>
+                    <li><a href="bidding.php">Bidding</a></li>
+                    <li><a href="maintenance.php">Maintenance</a></li>
                     <li><a href="modules/logout.php">Logout</a></li>
                 <?php } ?>
             </ul>
@@ -33,22 +38,32 @@
     <hr>
 
     <section class="register_wrap">
-        <div class="heading">
-            <p>Please login below or to register as a new user. <a href="register.php">Register Here.</a></p>
-        </div>
         <div class="register">
             <form id="loginForm" method="post" novalidate>
                 <p id="msg"></p>
-                <fieldset>
-                    <legend>Login Details</legend>
-                    <div >
-                        <input type="email" placeholder="Email Address" name="email">
+                <div class="title_text">
+                    <h3>Login Form</h3>
+                </div>
+                <div class="form_link_box">
+                    <div class="form_link_box_wrap login">
+                        <a href="index.php" class="login_link">Login</a>
+                        <a href="register.php" class="register_link">Signup</a>
                     </div>
-                    <div >
-                        <input type="password" placeholder="Password" name="password">
-                    </div>
+                </div>
+
+                <div class="field">
+                    <input type="email" placeholder="Email Address" name="email">
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <div class="pass-link">
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="form_btn">
                     <button type="submit">Login</button>
-                </fieldset>
+                </div>
+                <div class="signup-link"> Not a member? <a href="register.php">Signup now</a></div>
             </form>
         </div>
     </section>

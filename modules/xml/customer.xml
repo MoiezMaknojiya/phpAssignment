@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<users><user><customer_id>1</customer_id><firstname>Moiez</firstname><surename>Ali</surename><email>moiez@gmail.com</email><password>123</password><cpassword>asD123</cpassword></user></users>
+<users><user><customer_id>1</customer_id><firstname>1</firstname><surename>2</surename><email>1@gmail.com</email><password>123</password><cpassword>123</cpassword></user><user><customer_id>2</customer_id><firstname>2</firstname><surename>3</surename><email>2@gmail.com</email><password>123</password><cpassword>123</cpassword></user><user><customer_id>3</customer_id><firstname>3</firstname><surename>4</surename><email>3@gmail.com</email><password>123</password><cpassword>123</cpassword></user></users>

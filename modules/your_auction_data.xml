@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<auction>
+	
+	
+	<item>
+		<item_id>3</item_id>
+		<customer_id>1</customer_id>
+		<item_name>iMac</item_name>
+		<category>Laptop</category>
+		<start_price>100</start_price>
+		<reserve_price>200</reserve_price>
+		<buy_it_now_price>300</buy_it_now_price>
+		<duration>2023-10-26T20:55</duration>
+		<start_date>2023-10-12</start_date>
+		<start_time>05:55 PM</start_time>
+		<end_date>2023-10-26</end_date>
+		<end_time>08:55 PM</end_time>
+		<status>in_progress</status>
+		<latest_bid>
+            <customer_id>2</customer_id>
+            <current_bid_price>50</current_bid_price>
+        </latest_bid>
+        <latest_bid>
+            <customer_id>1</customer_id>
+            <current_bid_price>60</current_bid_price>
+        </latest_bid>
+	</item>
+</auction>
